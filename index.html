@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bitcoin mining</title>
     <link rel="stylesheet" href="CSS/style.css">
+
 </head>
 <body>
     <header>
     <h1>Bitcoin mining</h1>
 </header>
     <section id="amount">
-    <h2>Bitcoin amount</h2>
+    <h2>Du har <span id="viserAntallBitcoin"></span> Bitcoin</h2>
     <h2>amount Strøm</h2>
+    <button onclick="level2" id="ekstraClick">+1 bitcoin</button>
 </section>
     <section id="per-sec">
     <h2>Bitcoin per sec</h2>
@@ -27,22 +29,30 @@
     <button class="Bitcoin-Shop-knapp">NASA PC</button>
 </section>
 </section>
-    <!-- <h4>Pris</h4>
-    <h4>Pris</h4>
-    <h4>Pris</h4>
-    <h4>Pris</h4>
-    <h4>Pris</h4>
+<section id="Bitcoin-pris">
+    <h4 class="Bitcoin-shop-pris">10</h4>
+    <h4 class="Bitcoin-shop-pris">100</h4>    
+    <h4 class="Bitcoin-shop-pris">5000</h4>  
+    <h4 class="Bitcoin-shop-pris">500000</h4>  
+</section>
+<section id="Strøm-shop">
     <h3>Strøm shop</h3>
-    <button>Basic generator</button>
-    <button>Advanced generator</button>
-    <button>Vindmølle</button>
-    <button>Nuclear powerplant</button>
-    <button>THE SUN</button>
-    <h4>Pris</h4>
-    <h4>Pris</h4>
-    <h4>Pris</h4>
-    <h4>Pris</h4>
-    <h4>Pris</h4>
-    <img src="Images/Bitcoin.webp" alt="Bitcoin click"> -->
+    <section id="Strøm-button-shop-pos">
+    <button class="Strøm-Shop-knapp">Basic generator</button>
+    <button class="Strøm-Shop-knapp">Advanced generator</button>
+    <button class="Strøm-Shop-knapp">Vindmølle</button>
+    <button class="Strøm-Shop-knapp">Nuclear powerplant</button>
+    <button class="Strøm-Shop-knapp">THE SUN</button>
+</section>
+</section>
+<section id="Strøm-pris">
+    <h4 class="Strøm-shop-pris">10</h4> 
+    <h4 class="Strøm-shop-pris">500</h4>   
+    <h4 class="Strøm-shop-pris">10000</h4>  
+    <h4 class="Strøm-shop-pris">1000000</h4>  
+</section>
+<button onclick="counter()" onclick="checkIfTrue()" id="Bitcoin-button"></button>
+<img id="Bitcoin-Clicker" src="Images/Bitcoin.webp" alt="Bitcoin click">
+    <script src="Javascript/script.js"></script>
 </body> 
 </html>
