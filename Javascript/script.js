@@ -1,6 +1,6 @@
 
 let antallBitcoin = 0
-let level2 = false;
+let bitcoinEarn = 1
 
 function updateUI(){
     document.getElementById("viserAntallBitcoin").innerText = antallBitcoin;
@@ -10,19 +10,16 @@ function counterPluss() {
     counter
     console.log("hei")
 }
-
-function counter() {
-    if(level2 == true){
-        antallBitcoin+= 2 ;
-        updateUI();
-        console.log("hei level 2")
-    }
-    else{
-        antallBitcoin++ ;
-        updateUI();
-        console.log("hei")
-    }
+function merBitcoin() {
+    bitcoinEarn = bitcoinEarn + 1;
 }
+function counter() {
+        antallBitcoin += bitcoinEarn
+        updateUI();
+        
+    }
+        
+
 
 
 updateUI();
