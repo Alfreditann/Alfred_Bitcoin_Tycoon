@@ -42,7 +42,7 @@ header {
 }
 .Bitcoin-shop-pris {
   position: relative;
-  margin-top: 65px;
+  margin-top: 50px;
 }
 #Bitcoin-Clicker {
   position: absolute;
@@ -119,3 +119,33 @@ header {
   cursor: pointer;
   width: 150px;
 }
+#selgeTiKnapp {
+    position: absolute;
+    background-color: red;
+    border-radius: 10px;
+    color: black;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 165px;
+  }
+  #selgeTiKKnapp {
+    position: relative;
+    background-color: red;
+    border-radius: 10px;
+    color: black;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 100px;
+  }
+  #tiK {
+    position: absolute;
+    left: 50%;
+  }
