@@ -1,114 +1,121 @@
 header {
-    color: aquamarine;
-    right: 45%;
-    position: absolute;
+  color: aquamarine;
+  right: 45%;
+  position: absolute;
 }
 
 #amount {
-    position: absolute;
-    color: blue;
-    top: 10%;
+  position: absolute;
+  color: blue;
+  top: 10%;
 }
-#per-sec{
-    position: absolute;
-    right: 5%;
-    top: 10%;
+#per-sec {
+  position: absolute;
+  right: 5%;
+  top: 10%;
 }
 #Bitcoin-shop {
-    position: absolute;
-    top: 55%;
-    background-color: aqua;
-    border-color: black;
+  position: absolute;
+  top: 55%;
 }
-#Bitcoin-button-shop-pos{
-    position: relative;
-    max-width: 70px;
-    
+#Bitcoin-button-shop-pos {
+  position: relative;
+  max-width: 70px;
 }
 .Bitcoin-Shop-knapp {
-    background-color: red; 
-    border-radius: 10px;
-    color: black;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    width: 150px;
+  background-color: red;
+  border-radius: 10px;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 150px;
 }
-#Bitcoin-pris{
-    position: absolute;
-    top: 56%;
-    left: 15%;
+#Bitcoin-pris {
+  position: absolute;
+  top: 56%;
+  left: 15%;
 }
-.Bitcoin-shop-pris{
-    position: relative;
-    margin-top: 65px;
+.Bitcoin-shop-pris {
+  position: relative;
+  margin-top: 65px;
 }
-#Bitcoin-Clicker{
-    position: absolute;
-    height: 200px;
-    left: 41.5%;
-    top: 50%;
-    cursor: pointer;
-    z-index: -1;
-    
+#Bitcoin-Clicker {
+  position: absolute;
+  height: 200px;
+  left: 41.5%;
+  top: 50%;
+  cursor: pointer;
+  z-index: -1;
 }
 #Strøm-shop {
-    position: absolute;
-    top: 50%;
-    left: 85%;
+  position: absolute;
+  top: 50%;
+  left: 85%;
 }
-#Strøm-button-shop-pos{
-    position: relative;
-    max-width: 70px;
-    
+#Strøm-button-shop-pos {
+  position: relative;
+  max-width: 70px;
 }
-.Strøm-Shop-knapp{
-    background-color: red; 
-    border-radius: 10px;
-    color: black;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    width: 150px;
+.Strøm-Shop-knapp {
+  background-color: red;
+  border-radius: 10px;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 150px;
 }
-#Strøm-pris{
-    position: absolute;
-    top: 53%;
-    left: 77%;
+#Strøm-pris {
+  position: absolute;
+  top: 53%;
+  left: 77%;
 }
-.Strøm-shop-pris{
-    margin-top: 70px;
-    text-align: right;
+.Strøm-shop-pris {
+  margin-top: 70px;
+  text-align: right;
 }
-#Bitcoin-button{
-    position: absolute;
-    left: 41.5%;
-    top: 50%;
-    width: 200px;
-    height: 200px;
-    border-color: transparent;
-    background-color: transparent;
-    cursor: pointer;
-
+#Bitcoin-button {
+  position: absolute;
+  left: 41.5%;
+  top: 50%;
+  width: 200px;
+  height: 200px;
+  border-color: transparent;
+  background-color: transparent;
+  cursor: pointer;
 }
-#ekstraClick{
-    background-color: red; 
-    border-radius: 10px;
-    color: black;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    width: 150px;
+#ekstraClick {
+  background-color: red;
+  border-radius: 10px;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 150px;
+}
+#selgeKnapp {
+  position: absolute;
+  background-color: red;
+  border-radius: 10px;
+  color: black;
+  padding: 15px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 150px;
 }
