@@ -70,12 +70,21 @@ function selleTiKBitcoin() {
     }
 }
 function autoBitcoin() {
-    if (!hasBougthTelefon && antallKroner >= 10){
-        antallKroner -=10;
+    
+    if (!hasBougthTelefon && antallKroner >= 10) {
+        if(antallStrøm >= 0) { 
+        setInterval(autoBitcoin, 1000);
+        // function autoBitcoin() {
+        //     document.getElementById("viserAntallBitcoin").innerHTML = antallBitcoin = antallBitcoin + 1;
+        // }
+        }
+        antallKroner -= 10;
         hasBougthTelefon = true;
-        document.getElementById("viserAntallBitcoin").innerHTML = antallBitcoin = antallBitcoin + 1;
         updateUI();
     }
+    // else {
+    //     alert("get your money up lil bro")
+    // }
 console.log("sdffs")
    
 
