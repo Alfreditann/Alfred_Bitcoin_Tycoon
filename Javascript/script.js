@@ -14,6 +14,12 @@ function updateUI() {
     document.getElementById("viserAntallBitcoin").innerText = antallBitcoin;
     document.getElementById("viserAntallKroner").innerText = antallKroner
     document.getElementById("viserAntallStrøm").innerText = antallStrøm
+
+     while(hasBougthTelefon == true && antallStrøm >=1) {
+    
+        setInterval(autoBitcoin, 1000)
+        updateUI();
+    }
 }
 
 
@@ -64,9 +70,17 @@ function selleTiKBitcoin() {
     }
 }
 function autoBitcoin() {
-    
+    if (!hasBougthTelefon && antallKroner >= 10){
+        antallKroner -=10;
+        hasBougthTelefon = true;
+        document.getElementById("viserAntallBitcoin").innerHTML = antallBitcoin = antallBitcoin + 1;
+        updateUI();
+    }
+console.log("sdffs")
+   
 
 }
+
 // if (!hasBougthTelefon && antallKroner >= 10) {
 //     antallKroner -= 10;
 //     hasBougthTelefon = true;
