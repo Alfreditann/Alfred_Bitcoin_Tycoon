@@ -10,38 +10,20 @@ let hasBougthLaptop = false;
 let hasBougthPC = false;
 let hasBougthNasa = false;
 
+//optaterer hvor mye strøm, penger og bitcoin du har
 function updateUI() {
     document.getElementById("viserAntallBitcoin").innerText = antallBitcoin;
     document.getElementById("viserAntallKroner").innerText = antallKroner
     document.getElementById("viserAntallStrøm").innerText = antallStrom
-
-     while(hasBougthTelefon == true && antallStrom >=1) {
-    
-        setInterval(autoBitcoin, 1000)
-        updateUI();
-    }
 }
 
-
-function merBitcoin() {
-    if (antallKroner >= minusKroner) {
-        antallKroner -= minusKroner;
-        minusBitcoin *= 2;
-        bitcoinEarn = bitcoinEarn + 1;
-        updateUI();
-    }
-    else {
-        bitcoinEarn = bitcoinEarn;
-        updateUI();
-        alert("Du er fattig 😂😂😂😂")
-    }
-}
+//når du trykker på knappen øker bitcoin med 1
 function counter() {
     antallBitcoin += bitcoinEarn
     updateUI();
 
 }
-
+//funsjonen selger bitcoin når du trykker på knappen
 function selleBitcoin() {
     if (antallBitcoin >= antallBitcoin) {
         antallKroner += antallBitcoin * 1;
@@ -49,32 +31,10 @@ function selleBitcoin() {
         updateUI();
     }
 }
-function selleTiBitcoin() {
-    if (antallBitcoin >= 10) {
-        antallBitcoin = antallBitcoin - 10;
-        antallKroner = antallKroner + 10;
-        updateUI();
-    }
-    else {
-        alert("du har ikke bitcoin å selge")
-    }
-}
-function selleTiKBitcoin() {
-    if (antallBitcoin >= 10000) {
-        antallBitcoin = antallBitcoin - 10000;
-        antallKroner = antallKroner + 10000;
-        updateUI();
-    }
-    else {
-        alert("du har ikke bitcoin å selge")
-    }
-}
+//når du trykker på knappen så aktiverer den autobitcoin, sånn at du får bitcoin hvert sekund
 function autoBitcoin() {
-    
     if (!hasBougthTelefon && antallKroner >= 10) {
-        if(antallStrom >= 0) { 
-        setInterval(autoBitcoin, 1000);
-        }
+        setInterval(foTelefonBitcoin, 1000);
         antallKroner -= 10;
         hasBougthTelefon = true;
         updateUI();
@@ -82,70 +42,109 @@ function autoBitcoin() {
    
 
 }
-
+//den sier hvor mye bitcoin og penger autobitcoin skal plusse/minuse
+function foTelefonBitcoin() {
+    if(antallStrom >= 1) {
+        antallBitcoin = antallBitcoin + 2;
+        antallStrom = antallStrom - 1;
+        updateUI();
+    }
+}
 
 function ipadEarning() {
-    if (hasBougthIpad && antallKroner >= 100) {
-        setInterval(autoBitcoin, 500);
-        function autoBitcoin() {
-            document.getElementById("viserAntallBitcoin").innerHTML = antallBitcoin = antallBitcoin + 1;
-        }
+    if (!hasBougthIpad && antallKroner >= 100) {
+        setInterval(foIpadBitcoin, 500);
         antallKroner -= 100;
         hasBougthIpad = true;
         updateUI();
     }
-    else {
-        alert("get your money up lil bro")
+}
+function foIpadBitcoin() {
+    if(antallStrom >= 2) {
+        antallBitcoin = antallBitcoin + 4;
+        antallStrom = antallStrom - 2;
+        updateUI();
     }
 }
 function laptopEarning() {
-    if (hasBougthLaptop && antallKroner >= 5000) {
-        setInterval(autoBitcoin, 1000
-        );
-        function autoBitcoin() {
-            document.getElementById("viserAntallBitcoin").innerHTML = antallBitcoin = antallBitcoin + 500;
-        }
+    if (!hasBougthLaptop && antallKroner >= 5000) {
+        setInterval(foLaptopBitcoin, 5000);
         antallKroner -= 5000;
-        hasBougthLaptop = true
+        hasBougthLaptop = true;
         updateUI();
     }
-    else {
+}
+function foLaptopBitcoin() {
+    if(antallStrom >= 1000) {
+        antallBitcoin = antallBitcoin + 2000;
+        antallStrom = antallStrom - 1000;
+        updateUI();
     }
 }
 function pcEarning() {
-    if (hasBougthPC && antallKroner >= 50000) {
-        setInterval(autoBitcoin, 1000
-        );
-        function autoBitcoin() {
-            document.getElementById("viserAntallBitcoin").innerHTML = antallBitcoin = antallBitcoin + 5000;
-        }
+    if (!hasBougthPC && antallKroner >= 50000) {
+        setInterval(foPCBitcoin, 1000);
         antallKroner -= 50000;
         hasBougthPC = true;
         updateUI();
     }
-    else {
-        alert("get your money up lil bro")
-    }
 }
-function nasaEarning() {
-    if (hasBougthNasa && antallKroner >= 5000000) {
-        setInterval(autoBitcoin, 1000
-        );
-        function autoBitcoin() {
-            document.getElementById("viserAntallBitcoin").innerHTML = antallBitcoin = antallBitcoin + 500000;
-        }
-        antallKroner -= 5000000;
-        hasBougthLaptop = true;
+function foPCBitcoin() {
+    if(antallStrom >= 10000) {
+        antallBitcoin = antallBitcoin + 20000;
+        antallStrom = antallStrom - 10000;
         updateUI();
     }
-    else {
-        alert("get your money up lil bro")
+}
+
+function nasaEarning() {
+    if (!hasBougthNasa && antallKroner >= 500000) {
+        setInterval(foNASABitcoin, 100);
+        antallKroner -= 500000;
+        hasBougthPC = true;
+        updateUI();
     }
 }
+function foNASABitcoin() {
+    if(antallStrom >= 100000) {
+        antallBitcoin = antallBitcoin + 200000;
+        antallStrom = antallStrom - 100000;
+        updateUI();
+    }
+}
+//når du trykker på knappen så gir den deg strøm som brukes til automatiske maskiner
 function bGenerator() {
     if (antallKroner >= 10) {
         antallStrom = antallStrom + 10
         antallKroner = antallKroner - 10;
+        updateUI()   
+    }
+}
+function aGenerator() {
+    if (antallKroner >= 100) {
+        antallStrom = antallStrom + 200
+        antallKroner = antallKroner - 100;
+        updateUI()   
+    }
+}
+function Vindmolle() {
+    if (antallKroner >= 10000) {
+        antallStrom = antallStrom + 5000;
+        antallKroner = antallKroner - 10000;
+        updateUI()   
+    }
+}
+function Powerplant() {
+    if (antallKroner >= 100000) {
+        antallStrom = antallStrom + 50000;
+        antallKroner = antallKroner - 100000;
+        updateUI()   
+    }
+}
+function Sun() {
+    if (antallKroner >= 1000000) {
+        antallStrom = antallStrom + 500000;
+        antallKroner = antallKroner - 1000000;
         updateUI()   
     }
 }

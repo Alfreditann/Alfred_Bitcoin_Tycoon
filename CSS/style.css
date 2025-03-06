@@ -1,12 +1,22 @@
 header {
-  color: aquamarine;
-  right: 45%;
   position: absolute;
+  background-color: blue;
+  color: aquamarine;
+  right: 0%;
+  width: 100%;
+  margin-top: -10px;
+  border-color: black;
+  border-style: solid;
+  border-width: 5px;
+}
+#headerText{
+  left: 41%;
+  position: relative;
 }
 
 #amount {
   position: absolute;
-  color: blue;
+  color: aqua;
   top: 10%;
 }
 #per-sec {
