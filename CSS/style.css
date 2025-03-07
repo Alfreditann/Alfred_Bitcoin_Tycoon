@@ -1,7 +1,7 @@
 header {
   position: absolute;
-  background-color: blue;
-  color: aquamarine;
+  background-color: darkolivegreen;
+  color: lightgreen;
   width: 100%;
   margin-top: -10px;
   border-color: black;
@@ -16,13 +16,9 @@ header {
 
 #amount {
   position: absolute;
-  color: aqua;
+  color: lightgreen;
   top: 10%;
-  background-color: blue;
   margin-left: -10px;
-  border-style: solid;
-  border-color: black;
-  border-width: 5px;
   
   
 }
@@ -35,17 +31,16 @@ header {
   max-width: 70px;
 }
 .Bitcoin-Shop-knapp {
-  background-color: red;
-  border-radius: 10px;
-  color: black;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
+  background-color: darkolivegreen !important; /* Force the background color */
+  border: none; /* Remove any default borders */
+  border-radius: 10px; /* Keep rounded corners */
+  padding: 16px 32px; /* Maintain button padding */
+  font-size: 14px;
   cursor: pointer;
+  color: white; /* Ensure text is visible */
+  opacity: 1;
   width: 150px;
+  margin-top: 10px;
 }
 #Bitcoin-pris {
   position: absolute;
@@ -55,6 +50,7 @@ header {
 .Bitcoin-shop-pris {
   position: relative;
   margin-top: 50px;
+  color: lightgreen;
 }
 #Bitcoin-Clicker {
   position: absolute;
@@ -64,36 +60,37 @@ header {
   cursor: pointer;
   z-index: -1;
 }
-#Strøm-shop {
+#Strom-shop {
   position: absolute;
   top: 50%;
   left: 85%;
 }
-#Strøm-button-shop-pos {
+#Strom-button-shop-pos {
   position: relative;
   max-width: 70px;
 }
-.Strøm-Shop-knapp {
-  background-color: red;
-  border-radius: 10px;
-  color: black;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
+.Strom-Shop-knapp {
+  background-color: darkolivegreen !important; /* Force the background color */
+  border: none; /* Remove any default borders */
+  border-radius: 10px; /* Keep rounded corners */
+  padding: 16px 32px; /* Maintain button padding */
+  font-size: 14px;
   cursor: pointer;
+  color: white; /* Ensure text is visible */
+  opacity: 1;
   width: 150px;
+  margin-top: 10px;
 }
-#Strøm-pris {
+#Strom-pris {
   position: absolute;
   top: 53%;
   left: 77%;
 }
-.Strøm-shop-pris {
-  margin-top: 70px;
-  text-align: right;
+.strom-shop-pris {
+  position: relative;
+  margin-top: 55px; 
+  text-align: right; 
+  color: lightgreen;
 }
 #Bitcoin-button {
   position: absolute;
@@ -105,16 +102,20 @@ header {
   background-color: transparent;
   cursor: pointer;
 }
+
 #selgeKnapp {
-  position: absolute;
-  background-color: red;
-  border-radius: 10px;
-  color: black;
-  padding: 15px 32px;
-  text-decoration: none;
-  display: inline-block;
+  background-color: darkolivegreen !important; /* Force the background color */
+  border: none; /* Remove any default borders */
+  border-radius: 10px; /* Keep rounded corners */
+  padding: 16px 32px; /* Maintain button padding */
   font-size: 14px;
-  margin: 4px 2px;
   cursor: pointer;
-  width: 150px;
+  color: white; /* Ensure text is visible */
+  opacity: 1; /* Prevent transparency issues */
+}
+
+
+body{
+  background-color: olive;
+  max-width: 100%;
 }
